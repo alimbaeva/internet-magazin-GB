@@ -47,6 +47,7 @@
             padding: 34px;
             display: flex;
             flex-direction: column;
+            z-index: 1;
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         }
 
@@ -96,17 +97,46 @@
 
     &__baner {
         display: flex;
-        justify-content: space-between;
+        position: relative;
+
+        &_imeges {
+            position: absolute;
+            top: 8%;
+        }
+        
+        &_text {
+            display: flex;
+            flex-direction: row;   
+            margin-top: 29%;
+            margin-left: 60%; 
+        }
+
+        &_cube {
+            width: 12px;
+            height: 92px;
+            margin-right: 16px;
+            background: $color-red;
+        }
+
+        &_cube-h2 {
+            margin: 0;
+            padding: 0;
+            @include txt-mix (48px, 900, 48px, $bkok-black)
+            
+        }
+
+        &_cube-h1 {
+            margin: 0;
+            padding: 0;
+            @include txt-mix (32px, 700, 38.4px, $bkok-black)
+        }
+
+        &_strong {
+            color: $color-red;
+        }
     }
 
-    &_imeges {
-        display: flex;
-        justify-content: flex-start;        
-    }
-
-    &_imeges-item {
-        padding: 95%;
-    }
+   
 }
 
 
