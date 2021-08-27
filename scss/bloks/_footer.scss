@@ -101,11 +101,13 @@
         margin-left: -3px; 
         border-radius: 0 22px  22px 0;       
         color: white;
+        cursor: pointer;
         @include btn-mix (100px, 49px, none, $color-red, 0 10px 0 0)
     }
 
     &__form {
         display: flex;
+        
     }
 }
 
