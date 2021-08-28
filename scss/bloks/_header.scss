@@ -49,13 +49,11 @@
             position: absolute;
             left: 440%;
             top: 156%;
-            width: 232px;
-            height: 764px;
-            padding: 34px;
             display: flex;
             flex-direction: column;
             z-index: 1;
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            @include btn-mix (323px, 764px, none, $white, 34px);
         }
 
 
