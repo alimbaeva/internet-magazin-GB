@@ -67,13 +67,19 @@
     }
 
     &__hidden-txt {
-        line-height: 17px;
-        color: #EF5B70;
         margin-left: 11px;
         @include txt-mix (16px, 400, 19px, $color-red)
     }
+
+    
 }
 
 .distance {
     margin-top: 65px;
 }
+
+// .choose-page__hidden:hover + .choose-page__hidden-txt{
+//     background: $color-red;
+//     color: $white;
+//     fill: white;
+// }

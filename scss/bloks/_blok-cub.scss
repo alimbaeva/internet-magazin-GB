@@ -22,6 +22,7 @@
         border-top: 2px solid $bkok-black;
         border-left: 2px solid $bkok-black;
         transform: rotateY(0deg) rotate(-45deg); 
+        cursor: pointer;
     }
 
     &__number {
@@ -64,6 +65,7 @@
         height: 10px;
         border-top: 2px solid $bkok-black;
         border-right: 2px solid $bkok-black;
-        transform: rotateY(0deg) rotate(45deg); 
+        transform: rotateY(0deg) rotate(45deg);
+        cursor: pointer; 
     }
 }
