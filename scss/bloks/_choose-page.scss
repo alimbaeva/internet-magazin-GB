@@ -71,6 +71,21 @@
         @include txt-mix (16px, 400, 19px, $color-red)
     }
 
+    &__hidden:hover > &__add {
+        transition: .8s;
+        @include btn-mix (211px, 47px, 1px solid $color-red, $color-red, 10px)
+    }
+
+    &__hidden:hover  &__hidden-txt {
+        transition: .8s;
+        @include txt-mix (16px, 400, 19px, $white)
+    }
+
+    &__hidden:hover &__svg {
+        fill: white;
+        transition: .8s;
+    }
+
     
 }
 

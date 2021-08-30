@@ -58,11 +58,18 @@
         list-style: url(/img/galochka.svg);
     }
 
-
     &_form-button {
+        color: $color-red;
+        margin-top: 39px;
+        cursor: pointer;
+        @include btn-mix (167px, 50px, 1px solid $color-red, $white, none)
+    }
+
+    &_form-button:hover {
         color: $white;
         margin-top: 39px;
         cursor: pointer;
+        transition: .9s;
         @include btn-mix (167px, 50px, 1px solid $color-red, $color-red, none)
     }
 
@@ -70,6 +77,7 @@
         content: url(/img/strelka.svg);
         margin-left: 20px;
     }
+    
 
 }
 

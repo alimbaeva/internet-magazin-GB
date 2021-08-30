@@ -113,6 +113,7 @@
         background: #F16D7F;
         border: 1px solid #FF6A6A;
         color: white;
+        transition: .8s;
     }
 
 
@@ -180,9 +181,11 @@
 
     &__link:hover &__item__img {
         filter: brightness(30%);
+        transition: .8s;
     }
 
     &__link:hover &__hidden {
         display: flex;
+        transition: .8s;
     }
 }

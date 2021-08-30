@@ -1,7 +1,11 @@
 @import '../vars';
 
-.footer {
+.qualitys {
     margin-top: 109px;
+}
+
+
+.footer {    
     background: #222224;
 }
 
@@ -98,10 +102,20 @@
     }
 
     &__integer {
+        margin-left: -3px;         
+        border-radius: 0 22px  22px 0; 
+        border: 1px solid $color-red;      
+        color: $color-red;
+        cursor: pointer;
+        @include btn-mix (100px, 49px, none, $white, 0 10px 0 0)
+    }
+
+    &__integer:hover {
         margin-left: -3px; 
         border-radius: 0 22px  22px 0;       
         color: white;
         cursor: pointer;
+        transition: .8s;
         @include btn-mix (100px, 49px, none, $color-red, 0 10px 0 0)
     }
 
@@ -127,10 +141,12 @@
 
     &__icon-color-1:hover {
         fill: #F16D7F;
+        transition: .5s;
      }
 
     &__icon-color-1:hover + &__icon-color-2 {
         fill: white;
+        transition: .5s;
     }
 }
 

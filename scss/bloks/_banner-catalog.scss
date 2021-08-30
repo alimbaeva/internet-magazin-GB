@@ -27,6 +27,12 @@
         justify-content: center;
     }
 
+    &__batton:hover {
+        border: 1px solid $color-red;
+        background: $color-red;
+        transition: .8s;
+    }
+
    
 }
 

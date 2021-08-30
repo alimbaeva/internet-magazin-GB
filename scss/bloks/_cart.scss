@@ -51,6 +51,11 @@
         @include btn-mix (43px, 28px, 1px solid #EAEAEA, $white, 4px 12px)
     }
 
+
+    &__input-number:hover {
+        border: 1px solid $color-red;
+    }
+
     &__close {
         padding:25px 14px 0 70px;
     }
@@ -94,6 +99,13 @@
         @include btn-mix (150px, 34px, 1px solid #A4A4A4, $white, 8px)
     }
 
+    &__from-button:hover {
+        color: $white;
+        border: 1px solid $color-red;
+        background: $color-red;
+        transition: .8s;
+    }
+
     &__button-p {
         margin: 0;       
     }
@@ -131,8 +143,14 @@
 
     &__checkout-button {
         cursor: pointer;
-        @include txt-mix (16px, 300, 19px, $white);
-        @include btn-mix (273px, 50px, 1px solid $color-red, $color-red, none)
+        @include txt-mix (16px, 300, 19px, rgb(0, 0, 0));
+        @include btn-mix (273px, 50px, 1px solid #a4a4a4, $white, none)
+    }
+
+    &__checkout-button:hover {
+        color: $white;
+        background: $color-red;
+        transition: .8s;
     }
 
 
@@ -151,6 +169,13 @@
         margin-top: 72px;
         margin-right: 180px;
         margin-bottom: 40px;
+    }
+
+    &__button:hover {
+        color: $white;
+        border: 1px solid $color-red;
+        background: $color-red;
+        transition: .8s;
     }
 }
 
