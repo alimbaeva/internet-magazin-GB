@@ -3,7 +3,7 @@
 .section-foto {
     margin-top: 65px;
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 260px);
     grid-gap: 30px;
     color: $white;
